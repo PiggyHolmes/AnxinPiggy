@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Increment Button</title>
+    <style>
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="incrementBtn">Piggy Strike!</button>
+    <p>Anxin Doki Doki: <span id="count">0</span></p>
+
+    <script>
+        let count = 0;
+        const button = document.getElementById('incrementBtn');
+        const countDisplay = document.getElementById('count');
+
+        button.addEventListener('click', function() {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
